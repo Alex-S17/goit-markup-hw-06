@@ -77,6 +77,78 @@
                 <use href="./images/icons.svg#icon-modal-close"></use>
               </svg>
             </button>
+            <p class="modal-slogan">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form">
+              <!-- Формы модального окна -->
+              <div class="form-block">
+                <div class="field-wrap">
+                  <label class="modal-label" for="name">Имя</label>
+                  <div class="modal-field">
+                    <svg class="modal-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-icon-person-modal"></use>
+                    </svg>
+                    <input class="modal-input" type="text" name="name" id="name" />
+                  </div>
+                </div>
+
+                <div class="field-wrap">
+                  <label class="modal-label" for="tel">Телефон</label>
+                  <div class="modal-field">
+                    <svg class="modal-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-icon-phone-modal"></use>
+                    </svg>
+                    <input class="modal-input" type="tel" name="tel" id="tel" />
+                  </div>
+                </div>
+
+                <div class="field-wrap">
+                  <label class="modal-label" for="email">Почта</label>
+                  <div class="modal-field">
+                    <svg class="modal-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-icon-mail-modal"></use>
+                    </svg>
+                    <input class="modal-input" type="email" name="email" id="email" />
+                  </div>
+                </div>
+
+                <div class="field-wrap">
+                  <label class="modal-label" for="comment">Комментарий</label>
+                  <div class="modal-textarea-field">
+                    <textarea
+                      class="modal-textarea"
+                      name="comment"
+                      id="comment"
+                      placeholder="Введите текст"
+                    ></textarea>
+                  </div>
+                </div>
+                <div>
+                  <!-- Соглашение -->
+                  <div class="agreement-wrap">
+                    <div class="custom-checkbox-wrap">
+                      <input
+                        class="checkbox visually-hidden"
+                        type="checkbox"
+                        name="agreement"
+                        id="agreement"
+                      />
+                      <svg class="checkbox-icon-custom" width="16" height="15">
+                        <use href="./images/icons.svg#icon-icon-chkbox-modal-checked"></use>
+                      </svg>
+
+                      <label class="label-agreement" for="agreement"
+                        >Соглашаюсь с рассылкой и принимаю
+                        <a class="qqq" href=""
+                          ><span class="link-agreement">Условия договора</span></a
+                        ></label
+                      >
+                    </div>
+                    <!-- КНОПКА -->
+                    <button class="submit-button" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -486,6 +558,34 @@
                   </a>
                 </li>
               </ul>
+            </div>
+          </li>
+
+          <li>
+            <!-- Блок окна подписки на рассылку -->
+            <div class="footer-submit">
+              <h3 class="section-subtitle foot-subtitle">Подпишитесь на рассылку</h3>
+
+              <form>
+                <ul class="list flex">
+                  <li class="foot-email-form">
+                    <label for="user-email"></label>
+                    <input
+                      class="foot-email-input"
+                      type="email"
+                      name="email"
+                      id="user-email"
+                      placeholder="E-mail"
+                    />
+                  </li>
+                  <li class="foot-email-submit">
+                    <button class="submit-btn-foot" type="submit">Подписаться</button>
+                    <svg class="foot-submit-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-icon-send-footer"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </form>
             </div>
           </li>
         </ul>
